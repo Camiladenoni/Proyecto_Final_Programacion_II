@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Lado izquierdo con imagen fija */
+.left-side {
+    flex: 1;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-side img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Lado derecho formulario */
+.right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.form-container {
+    text-align: center;
+    width: 80%;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+}
+
+/* Botón */
+form button {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover {
+    background: #555;
+}
+
+/* Link registrar */
+.btn {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+.btn:hover {
+    text-decoration: underline;
+}
+
+/* Error */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
